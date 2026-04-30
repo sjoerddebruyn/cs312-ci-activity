@@ -35,7 +35,7 @@ jobs:
       - name: Test
         run: pytest -v --junitxml=pytest-report.xml
 
-            - name: Upload test report
+      - name: Upload test report
         if: always()
         uses: actions/upload-artifact@v7
         with:
